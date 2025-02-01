@@ -1,0 +1,93 @@
+---
+---
+
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+/** Font Awesome 
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.woff2");
+}
+
+*/
+
+/** Admonition Styles **/
+
+.error, .warning, .info, .tip, .note {
+	border: 1px solid;
+	padding: 10px 15px;
+	margin: 20px 40px 20px 20px;
+	border-radius: 4px;
+}
+
+.info {
+	border-color: #0099ff;
+	background-color: #ccebff
+}
+
+.info::before {
+	padding-right: 10px;
+    font-family: 'Font Awesome 5 Free';
+	content: "\f05a";
+	font-size: 130%;
+    font-weight: 900;
+}
+
+.note {
+	border-color: #FD0;
+	background-color:	#fffce6;
+}
+
+.note::before {
+	padding-right: 10px;
+	font-family: 'Font Awesome 5 Free';
+	content: "\f1ea";
+	font-size: 130%;
+    font-weight: 900;
+}
+
+.tip {
+	border-color: #6c0;
+	background-color: #f2ffe6;
+}
+
+.tip::before {
+	padding-right: 10px;
+	font-family: 'Font Awesome 5 Free';
+	content: "\f058";
+	font-size: 130%;
+    font-weight: 900;
+}
+
+.warning {
+	border-color: #F20;
+	background-color: #ffe9e6;
+}
+
+.warning::before {
+	padding-right: 10px;
+	font-family: 'Font Awesome 5 Free';
+	content: "\f071";
+	font-size: 130%;
+    font-weight: 900;
+}
+
+/* Code Block */
+
+pre.highlight {
+    border: 1px solid rgb(88, 88, 88);
+    padding: 10px;
+    background-color: #e5e7e8;
+}
